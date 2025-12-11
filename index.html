@@ -20,6 +20,12 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
 
+    <!-- AOS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/aos@next/dist/aos.css"
+    />
+
     <!-- my css -->
     <link
       rel="stylesheet"
@@ -30,7 +36,7 @@
   </head>
   <body id="home">
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
       <div class="container-fluid">
         <a
           class="navbar-brand"
@@ -49,42 +55,48 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="collapse navbar-collapse"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="#"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#about"
-                >About</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#projects"
-                >Projects</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#Contact"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
+  class="collapse navbar-collapse"
+  id="navbarNav"
+>
+  <ul class="navbar-nav ms-auto">
+    <li class="nav-item">
+      <a
+        class="nav-link active"
+        aria-current="page"
+        href="#"
+        >Home</a
+      >
+    </li>
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        href="#about"
+        >About</a
+      >
+    </li>
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        href="#projects"
+        >Projects</a
+      >
+    </li>
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        href="#gallery" 
+        >Gallery</a
+      >
+    </li>
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        href="#Contact"
+        >Contact</a
+      >
+    </li>
+  </ul>
+</div>
     </nav>
     <!-- Akhir Navbar -->
 
@@ -120,10 +132,17 @@
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
+          <div
+            class="col-md-4"
+            data-aos="fade-right"
+          >
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium animi illum reprehenderit deleniti eaque eum id vel atque natus porro.</p>
           </div>
-          <div class="col-md-4">
+          <div
+            class="col-md-4"
+            data-aos="fade-left"
+            data-aos-delay="100"
+          >
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta blanditiis vitae possimus sunt dolor fugit, ea beatae, voluptas placeat labore corrupti necessitatibus, officia obcaecati.</p>
           </div>
         </div>
@@ -151,7 +170,11 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div
+              class="card"
+              data-aos="zoom-in"
+              data-aos-duration="500"
+            >
               <img
                 src="img/projects/1.jpg"
                 class="card-img-top"
@@ -163,7 +186,12 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div
+              class="card"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              data-aos-duration="500"
+            >
               <img
                 src="img/projects/2.jpg"
                 class="card-img-top"
@@ -175,7 +203,12 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div
+              class="card"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+              data-aos-duration="500"
+            >
               <img
                 src="img/projects/3.jpg"
                 class="card-img-top"
@@ -187,7 +220,12 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div
+              class="card"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+              data-aos-duration="500"
+            >
               <img
                 src="img/projects/4.jpg"
                 class="card-img-top"
@@ -199,7 +237,12 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div
+              class="card"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+              data-aos-duration="500"
+            >
               <img
                 src="img/projects/5.jpg"
                 class="card-img-top"
@@ -225,6 +268,110 @@
       </svg>
     </section>
     <!-- Akhir Projects -->
+
+    <!-- Gallery -->
+    <section id="gallery">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Galery</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <a href="#">
+              <img
+                src="img/thumbnail/A.jpg"
+                alt="Gambar 1"
+                class="img-fluid gallery-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img
+                src="img/thumbnail/B.jpg"
+                alt="Gambar 2"
+                class="img-fluid gallery-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img
+                src="img/thumbnail/C.jpg"
+                alt="Gambar 3"
+                class="img-fluid gallery-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img
+                src="img/thumbnail/D.jpg"
+                alt="Gambar 4"
+                class="img-fluid gallery-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img
+                src="img/thumbnail/E.jpg"
+                alt="Gambar 5"
+                class="img-fluid gallery-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img
+                src="img/thumbnail/F.jpg"
+                alt="Gambar 6"
+                class="img-fluid gallery-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img
+                src="img/thumbnail/G.jpg"
+                alt="Gambar 7"
+                class="img-fluid gallery-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img
+                src="img/thumbnail/H.jpg"
+                alt="Gambar 8"
+                class="img-fluid gallery-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img
+                src="img/thumbnail/I.jpg"
+                alt="Gambar 9"
+                class="img-fluid gallery-img"
+              />
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img
+                src="img/thumbnail/J.jpg"
+                alt="Gambar 10"
+                class="img-fluid gallery-img"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Galery -->
 
     <!-- Contact -->
     <section id="Contact">
@@ -337,103 +484,167 @@
     </footer>
     <!-- Akhir Footer -->
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
+
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const profileImage = document.querySelector('.jumbotron img');
-        const jumbotron = document.querySelector('.jumbotron');
-        jumbotron.style.perspective = '1000px';
-        profileImage.addEventListener('click', function () {
-          this.classList.toggle('zoomed');
-          this.style.transform = '';
-        });
-        profileImage.addEventListener('mousemove', function (e) {
-          if (!this.classList.contains('zoomed')) {
-            const rect = this.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-
-            const centerX = rect.width / 2;
-            const centerY = rect.height / 2;
-
-            const maxTilt = 10;
-            const rotateX = ((centerY - y) / centerY) * maxTilt;
-            const rotateY = ((x - centerX) / centerX) * maxTilt;
-            this.style.transform = `scale(1.0) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-          }
-        });
-        profileImage.addEventListener('mouseleave', function () {
-          if (!this.classList.contains('zoomed')) {
-            this.style.transform = 'scale(1.0) rotateX(0deg) rotateY(0deg)';
-          }
-        });
-        document.addEventListener('click', function (event) {
-          const isClickInsideImage = profileImage.contains(event.target);
-          if (!isClickInsideImage && profileImage.classList.contains('zoomed')) {
-            profileImage.classList.remove('zoomed');
-            profileImage.style.transform = '';
-          }
-        });
+      // 1. Registrasi Plugin
+      gsap.registerPlugin(TextPlugin);
+    
+      // 2. Animasi Navbar (Datang dari atas dengan efek 'bounce')
+      gsap.from('.navbar', {
+        duration: 1.5,
+        y: '-100%',
+        opacity: 0,
+        ease: 'bounce' 
       });
-    </script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const projectCards = document.querySelectorAll('#projects .card');
-        projectCards.forEach((card) => {
-          const maxTilt = 8;
-          const cardImage = card.querySelector('.card-img-top');
-          card.addEventListener('mousemove', function (e) {
-            const rect = this.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-            const centerX = rect.width / 2;
-            const centerY = rect.height / 2;
-            const rotateX = ((centerY - y) / centerY) * maxTilt * -1;
-            const rotateY = ((x - centerX) / centerX) * maxTilt;
-            this.style.transform = `scale(1.02) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-            if (cardImage) {
-              cardImage.style.transform = `translateZ(20px)`;
-            }
-          });
-          card.addEventListener('mouseleave', function () {
-            this.style.transform = 'scale(1.0) rotateX(0deg) rotateY(0deg)';
-            if (cardImage) {
-              cardImage.style.transform = `translateZ(0)`;
-            }
-          });
-        });
+    
+      // 3. Animasi Foto Jumbotron (Datang dari atas, dimulai setelah navbar)
+      gsap.from('.jumbotron img', {
+        duration: 1,
+        y: -100, // Posisi awal 100px di atas
+        opacity: 0,
+        ease: 'back.out(1.7)', 
+        delay: 0.5 
+      });
+    
+      // 4. Animasi Judul H1 'byyshikii' (Datang dari kiri)
+      gsap.from('.jumbotron h1.display-4', {
+        duration: 1.2,
+        x: -50, // Posisi awal 50px di kiri
+        opacity: 0,
+        delay: 1.0, 
+        ease: 'power2.out' 
+      });
+    
+      // 5. Animasi Tagline (Efek Mengetik dengan TextPlugin)
+      gsap.to('.jumbotron p.lead', {
+        duration: 2.5, // Durasi mengetik
+        delay: 2.5, 
+        text: 'Mahasiswa | Gamer | Web Enthusiast', // Teks yang akan diketik
+        ease: 'none' 
       });
     </script>
 
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbw_l5mgOiqx2UenY6qf25GccZ9VNiy0LxWzw8xKKGzqqrMTxiUhN8uXYSK8qVpQL0w21A/exec';
-      const form = document.forms['byyshiki-Contact-Form'];
-      const btnKirim = document.querySelector('.btn-kirim');
-      const btnLoading = document.querySelector('.btn-loading');
-      const myAlert = document.querySelector('.my-alert');
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+const profileImage = document.querySelector('.jumbotron img');
+const jumbotron = document.querySelector('.jumbotron');
+jumbotron.style.perspective = '1000px';
+profileImage.addEventListener('click', function () {
+this.classList.toggle('zoomed');
+this.style.transform = '';
+});
+profileImage.addEventListener('mousemove', function (e) {
+if (!this.classList.contains('zoomed')) {
+ const rect = this.getBoundingClientRect();
+ const x = e.clientX - rect.left;
+ const y = e.clientY - rect.top;
 
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        btnLoading.classList.remove('d-none');
-        btnKirim.classList.add('d-none');
+const centerX = rect.width / 2;
+ const centerY = rect.height / 2;
 
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-          .then((response) => {
-            btnLoading.classList.add('d-none');
-            btnKirim.classList.remove('d-none');
-            myAlert.classList.remove('d-none');
-            form.reset();
-            setTimeout(() => {
-              myAlert.classList.add('d-none');
-            }, 5000);
+const maxTilt = 10;
+ const rotateX = ((centerY - y) / centerY) * maxTilt;
+const rotateY = ((x - centerX) / centerX) * maxTilt;
+ this.style.transform = `scale(1.0) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+ }
+});
+ profileImage.addEventListener('mouseleave', function () {
+ if (!this.classList.contains('zoomed')) {
+this.style.transform = 'scale(1.0) rotateX(0deg) rotateY(0deg)';
+}
+ });
+ document.addEventListener('click', function (event) {
+ const isClickInsideImage = profileImage.contains(event.target);
+ if (!isClickInsideImage && profileImage.classList.contains('zoomed')) {
+ profileImage.classList.remove('zoomed');
+profileImage.style.transform = '';
+ }
+ });
+ });
+ </script>
 
-            console.log('Success!', response);
-          })
-          .catch((error) => {
-            btnLoading.classList.add('d-none');
-            btnKirim.classList.remove('d-none');
-            console.error('Error!', error.message);
-          });
-      });
-    </script>
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+const galleryImage = document.querySelectorAll(' .gallery-img');
+
+galleryImage.forEach((img, i) => {
+ img.dataset.aos = 'fade-down';
+ img.dataset.aosDelay = i * 100;
+ img.dataset.aosDuration = 1000;
+ });
+
+ AOS.init({
+once: true,
+duration: 2000,
+ });
+</script>
+    
+<script>
+ document.addEventListener('DOMContentLoaded', function () {
+const projectCards = document.querySelectorAll('#projects .card');
+ projectCards.forEach((card) => {
+ const maxTilt = 8;
+ const cardImage = card.querySelector('.card-img-top');
+card.addEventListener('mousemove', function (e) {
+ const rect = this.getBoundingClientRect();
+const x = e.clientX - rect.left;
+ const y = e.clientY - rect.top;
+const centerX = rect.width / 2;
+ const centerY = rect.height / 2;
+ const rotateX = ((centerY - y) / centerY) * maxTilt * -1;
+const rotateY = ((x - centerX) / centerX) * maxTilt;
+ this.style.transform = `scale(1.02) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+ if (cardImage) {
+ cardImage.style.transform = `translateZ(20px)`;
+ }
+});
+card.addEventListener('mouseleave', function () {
+ this.style.transform = 'scale(1.0) rotateX(0deg) rotateY(0deg)';
+if (cardImage) {
+ cardImage.style.transform = `translateZ(0)`;
+ }
+});
+ });
+ });
+ </script>
+
+<script>
+const scriptURL = 'https://script.google.com/macros/s/AKfycbw_l5mgOiqx2UenY6qf25GccZ9VNiy0LxWzw8xKKGzqqrMTxiUhN8uXYSK8qVpQL0w21A/exec';
+ const form = document.forms['byyshiki-Contact-Form'];
+const btnKirim = document.querySelector('.btn-kirim');
+ const btnLoading = document.querySelector('.btn-loading');
+const myAlert = document.querySelector('.my-alert');
+
+form.addEventListener('submit', (e) => {
+ e.preventDefault();
+btnLoading.classList.remove('d-none');
+btnKirim.classList.add('d-none');
+
+fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+.then((response) => {
+btnLoading.classList.add('d-none');
+ btnKirim.classList.remove('d-none');
+myAlert.classList.remove('d-none');
+form.reset();
+setTimeout(() => {
+myAlert.classList.add('d-none');
+}, 5000);
+
+console.log('Success!', response);
+})
+.catch((error) => {
+btnLoading.classList.add('d-none');
+btnKirim.classList.remove('d-none');
+ console.error('Error!', error.message);
+ });
+ });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js">
+</script>
+</body>
+</html>
   </body>
 </html>

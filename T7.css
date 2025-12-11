@@ -1,5 +1,6 @@
 .jumbotron {
   padding-top: 6rem;
+
   background-color: #e2edff;
 }
 
@@ -13,12 +14,15 @@ section {
 
 .jumbotron img:hover {
   opacity: 0.8;
+
   cursor: pointer;
+
   transition: 0.3s;
 }
 
 .jumbotron img.zoomed {
   transform: scale(1.7);
+
   cursor: zoom-out;
 
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3) !important;
@@ -28,28 +32,39 @@ section {
 
 .jumbotron img {
   transition: transform 0.3s ease-in-out;
+
   cursor: zoom-in;
+
   position: relative;
+
   z-index: 10;
+
   outline: none;
+
   -webkit-tap-highlight-color: transparent;
+
   transform-style: preserve-3d;
+
   perspective: 1000px;
 }
 
-/* T7.css */
-
 .jumbotron img.zoomed {
   transform: scale(1.3) rotateY(5deg);
+
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3) !important;
+
   z-index: 100;
 }
 
 #projects .card {
   transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+
   transform-style: preserve-3d;
+
   perspective: 1000px;
+
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
   border: none;
 }
 
@@ -59,4 +74,12 @@ section {
 
 #projects .card .card-img-top {
   transition: transform 0.1s ease-out;
+}
+
+.gallery-img {
+  width: 100%;
+}
+
+#gallery .row > * {
+  padding: 0;
 }
