@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      name="description"
+      content="Terima kasih telah menghubungi kami"
+    />
+    <title>Terima Kasih - byyshikii</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #6366f1, #8b5cf6);
+        padding: 20px;
+      }
+
+      .card {
+        background: white;
+        padding: 50px 40px;
+        border-radius: 15px;
+        max-width: 500px;
+        width: 100%;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        animation: slideIn 0.5s ease;
+      }
+
+      @keyframes slideIn {
+        from {
+          opacity: 0;
+          transform: translateY(-30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .icon {
+        width: 80px;
+        height: 80px;
+        background: linear-gradient(135deg, #6366f1, #8b5cf6);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+        color: white;
+        font-size: 2.5rem;
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+      }
+
+      h1 {
+        color: #6366f1;
+        margin-bottom: 15px;
+        font-size: 2rem;
+      }
+
+      p {
+        color: #6b7280;
+        margin-bottom: 30px;
+        line-height: 1.6;
+        font-size: 1.05rem;
+      }
+
+      .btn {
+        text-decoration: none;
+        color: white;
+        background: linear-gradient(135deg, #6366f1, #8b5cf6);
+        padding: 12px 30px;
+        border-radius: 50px;
+        display: inline-block;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+
+      .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+      }
+
+      .btn:active {
+        transform: translateY(-1px);
+      }
+
+      @media screen and (max-width: 480px) {
+        .card {
+          padding: 40px 25px;
+        }
+
+        h1 {
+          font-size: 1.6rem;
+        }
+
+        p {
+          font-size: 0.95rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="icon">✓</div>
+      <h1>Pesan Terkirim!</h1>
+      <p>Terima kasih sudah menghubungi saya. Saya akan segera membalas pesan Anda dalam waktu 24 jam.</p>
+      <a
+        href="index.html"
+        class="btn"
+        >Kembali ke Beranda</a
+      >
+    </div>
+  </body>
+</html>
