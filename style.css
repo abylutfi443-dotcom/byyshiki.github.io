@@ -444,7 +444,6 @@ footer p {
   margin: 0;
 }
 
-/* Responsive Design */
 @media screen and (max-width: 768px) {
   .burger {
     display: block;

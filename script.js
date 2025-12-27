@@ -1,4 +1,3 @@
-// Mobile Navigation Toggle
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('.nav-links');
 const navLinks = document.querySelectorAll('.nav-links li');
@@ -17,7 +16,6 @@ if (burger && nav) {
   });
 }
 
-// Smooth Scrolling
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -32,7 +30,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// Navbar Background on Scroll
 const navbar = document.getElementById('navbar');
 if (navbar) {
   window.addEventListener('scroll', () => {
@@ -44,7 +41,6 @@ if (navbar) {
   });
 }
 
-// Intersection Observer for Animations
 const observerOptions = {
   threshold: 0.1,
   rootMargin: '0px 0px -100px 0px',
@@ -67,7 +63,6 @@ sections.forEach((section) => {
   fadeInObserver.observe(section);
 });
 
-// Skill Progress Bar Animation
 const skillObserver = new IntersectionObserver(
   function (entries) {
     entries.forEach((entry) => {
@@ -91,7 +86,6 @@ if (skillsSection) {
   skillObserver.observe(skillsSection);
 }
 
-// Form Submission Handler
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
   contactForm.addEventListener('submit', function (e) {
@@ -102,13 +96,10 @@ if (contactForm) {
     const message = contactForm.querySelector('textarea[name="message"]').value;
 
     if (name && email && message) {
-      // Tampilkan pesan sukses
       alert('Terima kasih, ' + name + '! Pesan Anda telah diterima. Saya akan segera menghubungi Anda.');
 
-      // Reset form
       contactForm.reset();
 
-      // Scroll ke atas (optional)
       window.scrollTo({
         top: 0,
         behavior: 'smooth',
@@ -117,14 +108,12 @@ if (contactForm) {
   });
 }
 
-// Dynamic Year in Footer
 const copyrightText = document.getElementById('copyright');
 if (copyrightText) {
   const currentYear = new Date().getFullYear();
   copyrightText.innerHTML = '&copy; ' + currentYear + ' byyshikii. All rights reserved.';
 }
 
-// Project Cards Hover Effect
 const projectCards = document.querySelectorAll('.project-card');
 projectCards.forEach((card) => {
   card.addEventListener('mouseenter', function () {
@@ -135,7 +124,6 @@ projectCards.forEach((card) => {
   });
 });
 
-// Active Link on Scroll
 function setActiveNavLink() {
   let current = '';
 
@@ -158,5 +146,4 @@ function setActiveNavLink() {
 
 window.addEventListener('scroll', setActiveNavLink);
 
-// Initialize active link on page load
 setActiveNavLink();
